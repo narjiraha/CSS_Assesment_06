@@ -1,0 +1,326 @@
+body {
+  background-image: url(../img/sharadesert.jpg);
+  /* background-position: 60% 40%; */
+}
+
+.parent {
+  background-color: transparent;
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  padding-top: 20px;
+}
+
+.child_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__main {
+  display: flex;
+  align-items: center;
+}
+
+.child_menu img {
+  width: auto;
+  height: auto;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+ul {
+  display: inline-block;
+  display: flex;
+  gap: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+  color: aliceblue;
+  /* optional spacing between list items */
+}
+
+.child_navbar {
+  color: white;
+}
+
+/* SECTION 2 */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 1150px) {
+  .picture_container {
+    grid-gap: 10px 15px !important;
+  }
+  .picture_container > div {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    display: block;
+  }
+  .picture_container {
+    display: block ;
+  }
+  .picture_container > div {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    max-height: 450px;
+    background-size: cover;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  /* Centers container horizontally */
+}
+
+.loremtext {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  /* Centers content horizontally */
+  align-items: center;
+  /* Centers content vertically */
+  flex-direction: column;
+  /* Stacks content vertically */
+  color: white;
+  line-height: 1.5;
+  max-width: 68ch;
+}
+
+.sahara_content {
+  font-size: 100px;
+  margin-top: 100px;
+  color: white;
+}
+
+.btn {
+  justify-content: center;
+  /* Centers button horizontally */
+  align-items: center;
+  /* Centers button vertically */
+  background-color: aliceblue;
+  border-radius: 20px;
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  /* Centers button horizontally */
+  display: inline-flex;
+  padding: 0 24px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.picture_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px 45px;
+}
+
+.picture_container:hover {
+  cursor: pointer;
+}
+
+.pic1 {
+  background-image: url(../img/pic-1.png);
+  margin-top: 20px;
+  width: 280px;
+  height: 280px;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* Add a transition effect for a smooth hover effect */
+}
+
+.pic1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pic1:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.pic1:focus {
+  outline: none;
+}
+
+.pic1text {
+  padding: 0 20px;
+  color: white;
+  text-shadow: 0 0 10px white;
+}
+
+.pic2 {
+  background-image: url(../img/pic-2.png);
+  margin-top: 20px;
+  width: 280px;
+  height: 280px;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* Add a transition effect for a smooth hover effect */
+}
+
+.pic2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pic2:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.pic2:focus {
+  outline: none;
+}
+
+.pic2text {
+  padding: 0 20px;
+  color: white;
+  text-shadow: 0 0 10px white;
+}
+
+.pic3 {
+  background-image: url(../img/pic-3.png);
+  margin-top: 20px;
+  width: 280px;
+  height: 280px;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* Add a transition effect for a smooth hover effect */
+}
+
+.pic3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pic3:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.pic3:focus {
+  outline: none;
+}
+
+.pic3text {
+  color: white;
+  text-shadow: 0 0 10px white;
+  padding: 0 20px;
+}
+
+.pic4 {
+  background-image: url(../img/pic-4.png);
+  margin-top: 20px;
+  width: 280px;
+  height: 280px;
+  display: block;
+  border-radius: 15px;
+  background-size: 100%;
+  /* Adjust the value to your desired size */
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* Add a transition effect for a smooth hover effect */
+}
+
+.pic4:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pic4:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.pic4:focus {
+  outline: none;
+}
+
+.pic4text {
+  padding: 0 20px;
+  color: white;
+  text-shadow: 0 0 10px white;
+}
+
+/* Media qeury */
+@media (max-width: 856px) {
+  .parent {
+    background-image: cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listeItems {
+    display: flex;
+    left: 40px;
+  }
+
+  .container {
+    background-image: cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .picture_container {
+    display: flex;
+    flex-direction: column;
+  }
+}
